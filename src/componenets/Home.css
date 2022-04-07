@@ -1,0 +1,15 @@
+.divCarrusel{
+   border-radius: 30px;
+   background: rgba(0, 0, 0, 0.185);
+   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
+   padding-bottom: 55px;
+   padding-top: 55px;
+}
+.d-iline{
+    border-radius: 30px;
+}
+
+.navbar-brand > img {
+    width:55px;
+    
+  }
