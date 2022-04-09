@@ -1,12 +1,13 @@
 .div{
+    /* background-image: radial-gradient(circle, #05193783, #004d7a83, #2700938c, #7900bf7a, #eb1253a4); */
     display: flex;
-    background: url(../img/landin.png)  repeat no-repeat 10% 50%;
+    background: url(../img/log1.png)  repeat no-repeat 10% 50%;
     background-size: cover;
     flex-direction: column;
     padding-top: 5rem;
     padding-right: -45rem;
-    height: 140vh;
-    width: 140vh;
+    height: 100vh;
+    width: 100vh;
 }
 .div:hover{
     transform: translateY(-10px);
@@ -14,7 +15,7 @@
 .button1{
     margin-top: 450px;
     margin-left: 450px;
-    margin-bottom: 800px;
+    margin-bottom: 270px;
     transition: all 0.25s;
     border-radius: 9px;
     text-decoration: none;

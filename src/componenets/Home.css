@@ -1,15 +1,42 @@
 .divCarrusel{
-   border-radius: 30px;
-   background: rgba(0, 0, 0, 0.185);
-   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
-   padding-bottom: 55px;
-   padding-top: 55px;
-}
-.d-iline{
-    border-radius: 30px;
-}
-
-.navbar-brand > img {
-    width:55px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.185);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
+    padding-bottom: 55px;
+    padding-top: 55px;
     
-  }
+ }
+ .d-iline{
+     border-radius: 10px;
+ }
+ 
+ .navbar-brand > img {
+     width:55px;
+     
+   }
+ 
+   .sec-portfolio-js{
+     background: rgba(0, 0, 0, 0.185);
+     border-radius: 5px;
+   }
+   
+   /*
+   --------- Portfolio -------
+ */
+ .portfolio-item:hover > img{
+   transition: 0.4s transform ;
+ }
+ .portfolio-item:hover > img {
+     transform: scale(0.96);
+ }
+ 
+ footer {
+   position:absolute;
+   height:50px;
+   line-height:50px;
+   background:black;
+   color:white;
+   text-align:center;
+   left:0;
+   width:100%;
+ }

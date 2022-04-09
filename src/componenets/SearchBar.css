@@ -1,17 +1,38 @@
-.inp{
+.inp {
     margin: 5px;
     border-radius: 3px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
-   }
-   .button{
-       border-radius: 5px;
-       box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
-   }
-   .button:hover{
-       background: #17c9fa;
-   }
-
-nav{
-    border-radius: 5px; 
+  }
+  .button {
+    border-radius: 5px;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
+  }
+  .button:hover {
+    background: #17c9fa;
+  }
+  
+  .cdpOuV {
+    border-radius: 5px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.281);
-}   
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
+    
+}
+.containerall {
+    z-index: 99;
+  }
+  home.css
+  .divCarrusel {
+    z-index: -1;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.185);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
+    padding-bottom: 55px;
+    padding-top: 55px;
+  }
+  .d-iline {
+    border-radius: 30px;
+  }
+  
+  .navbar-brand > img {
+    width: 55px;
+  }
