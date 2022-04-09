@@ -3,18 +3,17 @@ import { Link } from 'react-router-dom';
 import './LandingPage.css'
 
 // ----- imagenes ---- \\
-// import TipoLogo from '../img/LogoLandin.png';
+import TipoLogo from '../img/log1.png';
 
 export default function LandingPage(){
     return(
-         <div className='div'>
-             {/* <img className='logo'src={TipoLogo} alt="perfil" /> */}
-            
-            <Link to='/home'>
-              
-                <button className='button1'>INGRESAR</button>
-              
-            </Link>
-        </div>
+        <div className="App">
+        <header className="App-header">
+          <img src={ TipoLogo} className="App-logo" alt="logo" />
+         <Link to='/home'>
+             <button className='button1'>INGRESAR</button> 
+         </Link>
+        </header>
+      </div>
     )
 }

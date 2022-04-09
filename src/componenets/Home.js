@@ -1,10 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Home.css'
 
 import SearchBar from './SearchBar';
 import BurguerButton from '../componenets/BurgerButton';
 
 import { Link } from 'react-router-dom';
+
+// ----------LOGIN --------------
+import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from './login/LoginButton';
+import LogautButton from './login/LogautButton';
 
 // ----------IMG INICIO --------------
 import camp from '../img/camp.jpg'
@@ -34,12 +39,9 @@ import port6 from '../img/portfolio/rehabi6.jpg'
 
 export default function Home(){
   
-  const [modal, setModal] = useState(true)
+  const { isAuthenticated } = useAuth0();
 
-  function handleClick (e){
-    e.preventDefault()
-    setModal(!modal)
-  }
+  
 
   return(
     <div>
@@ -56,7 +58,11 @@ export default function Home(){
         Lo que sale del corazón <cite title="Source Title">Llega al corazón</cite>
      </figcaption>
     </figure>
-
+    
+    { isAuthenticated ? <LogautButton /> : <LoginButton /> }
+    
+   
+      
         <br />
         <br />
         <hr />
@@ -120,11 +126,10 @@ export default function Home(){
         <h2>Echele mente mi papa</h2>
       </blockquote>
       </figure>  
-    { modal &&
+    
 
     <main class="row justify-content-center pt-5 sec-portfolio-js"
-    state={modal}
-    setState={setModal}>
+    >
         {/* <!--  columna 1 --> */}
         <div class="col-10 col-md-4">
           <div class="row">
@@ -194,11 +199,11 @@ export default function Home(){
         </div>
 
       </main>
-    }
+    
       <hr />
       <div class="row justify-content-center text-center">
         {/* <!-- logo --> */}
-      <a href="" class="navbar-brand">
+      <a href="/home" class="navbar-brand">
         <img src={Logo} alt=""/>
       </a>
       {/* <!-- Items --> */}
