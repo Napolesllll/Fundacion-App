@@ -4,7 +4,9 @@ import Home  from './componenets/Home';
 import Contact from './componenets/Contact';
 import Ludopata from './componenets/Ludopata';
 import PageProfile from './componenets/login/PageProfile';
+import Services from './componenets/Services';
 import './App.css';
+
 
 function App() {
   
@@ -12,12 +14,12 @@ function App() {
 
    <BrowserRouter>
     <div className="App">
-
       <Route exact path='/' component={LandingPage} />
       <Route path='/home' component={Home} />
       <Route path='/contact' component={Contact} />
       <Route path='/ludopata' component={Ludopata} />
       <Route path='/profile' component={PageProfile} />
+      <Route path='/service' component={Services} />
     </div>
    </BrowserRouter> 
   );

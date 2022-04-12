@@ -1,0 +1,13 @@
+/* .logautButton{
+    margin-left: 800px;
+    border-radius: 5px;
+    padding: 5px;
+    
+    transition: all 0.25s;
+} */
+
+.logautButton:hover{
+    background: -webkit-linear-gradient(rgba(207, 47, 47, 0.144), rgba(241, 199, 11, 0.308));
+    transform: translateY(-10px);
+
+}

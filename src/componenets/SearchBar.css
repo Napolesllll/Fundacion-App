@@ -11,12 +11,6 @@
     background: #17c9fa;
   }
   
-  .cdpOuV {
-    border-radius: 5px;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.281);
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
-    
-}
 .containerall {
     z-index: 99;
   }

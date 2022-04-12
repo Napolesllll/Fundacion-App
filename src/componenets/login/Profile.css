@@ -1,0 +1,19 @@
+.contenPerfil {
+    background: -webkit-linear-gradient(rgba(207, 47, 47, 0.363), rgba(241, 199, 11, 0.452));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  .contenPerfil2{
+      background: rgba(0, 0, 0, 0.287);
+      border-radius: 50%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-top: 50px;
+      margin-left: 15%;
+      margin-right: 15%;
+  }

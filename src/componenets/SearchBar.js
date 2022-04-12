@@ -18,7 +18,7 @@ function Navbar() {
       <NavContainer>
          {/* <!-- logo --> */}
       <a href="/home" class="navbar-brand">
-        <img src={log} alt=""/>
+        <img className='log' src={log} alt=""/>
       </a>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a onClick={handleClick} href="/home">Home</a>
@@ -50,6 +50,7 @@ export const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
   a {
     color: white;
     text-decoration: none;

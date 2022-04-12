@@ -48,8 +48,10 @@ export default function Home(){
    <SearchBar />
       <br />
       <br />
+    { isAuthenticated ? <LogautButton /> : <LoginButton  /> }
       <br />
       <br />
+
     <figure>
       <blockquote class="blockquote">
         <h2>Bienvenido seas a puerto seguro</h2>
@@ -59,9 +61,6 @@ export default function Home(){
      </figcaption>
     </figure>
     
-    { isAuthenticated ? <LogautButton /> : <LoginButton /> }
-    
-   
       
         <br />
         <br />
@@ -231,7 +230,7 @@ export default function Home(){
 
       </div>
 
-      <footer > 2022 © Jhon Brahian Cano </footer>
+      <footer > Copyright2022 © Rehabilitan docorazones fundacion </footer>
   </div>
     )
 }
