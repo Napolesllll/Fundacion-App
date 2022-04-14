@@ -1,23 +1,42 @@
+.container{
+  margin: 100px 10px;
+}
+.h-100{
+  box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
+  border-radius: 5px;
+}
+
 .divCarrusel{
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.185);
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
-    padding-bottom: 55px;
-    padding-top: 55px;
+    box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
+    padding-bottom: 55px; 
+     padding-top: 55px; 
+    margin: 30px 150px 30px 150px;
     
  }
  .d-iline{
      border-radius: 10px;
  }
  
- .navbar-brand > img {
-     width:55px;
-     
+  .navbar-brand > img {
+     width: 65px;
+     margin-left: 40px;
+     border-radius: 50%;
+     transition: 0.4s transform ;
    }
+ .navbar-brand > img:hover{
+    width: 60px;
+    transform: scale(0.96);
+    color: red;
+  }
  
    .sec-portfolio-js{
      background: rgba(0, 0, 0, 0.185);
+     box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
      border-radius: 5px;
+     margin: 100px 100px 100px 100px;
+     padding: 20px;
    }
    
    /*
@@ -29,7 +48,35 @@
  .portfolio-item:hover > img {
      transform: scale(0.96);
  }
- 
+ .redesHome{
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.216);
+	margin-top: 50px;
+  margin:20px;
+	margin-bottom: 25px;
+	width: 70px;
+	transition: .5s ease all;
+}
+.redesHome:hover{
+	border-radius: 50%;
+	background: #000;
+	width: 80px;
+}
+.navcito:hover{
+  width: 100px;
+  color: green;
+}
+.navcito {
+  border-radius: 50%;
+  text-decoration: none;
+  color: gray;
+   transition: .5s ease all;
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+   font-size: 10px;
+  background: rgba(14, 12, 12, 0.118);
+ }
  footer {
    position:absolute;
    height:50px;

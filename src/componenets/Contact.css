@@ -14,21 +14,25 @@
 .contenedor:hover{
 	transition: .3s ease all;
 }
+
+
+
 .logoContact > img{
 	width: 70px;
-	margin-top: 20px;
-	margin-bottom: -20px;
+	margin-top: -130px;
+	/* margin-bottom: -20px; */
 	transition: .3s ease all;
 	box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
-	border-radius: 60px;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.216);
 }
 .logoContact > img:hover{
-	background: rgba(0, 0, 0, 0.197);
-	width: 80px;
+	background: rgba(0, 0, 0, 0.216);
+	width: 120px;
 }
 
 .formulario {
-	min-width: 600px;
+	min-width: 400px;
 	margin: 50px 50px 50px 50px;
 	/* margin-bottom: 50px; */
 	/* background: url(../img/log1.png); */
@@ -37,8 +41,10 @@
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .ButtonRegresar{
-	margin-right: 85%;
-	border-radius: 5px;
+	margin-top: 80px;
+	margin-left: -85%;
+	border-radius: 10%;
+	padding: 5px;
 	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
 	color: white;
 	background: rgba(34, 192, 195, 0.778);
@@ -127,4 +133,22 @@
 }
 .formulario textarea:hover{
 	background: rgba(0, 0, 0, 0.092);
+}
+/* 
+.contentRedes{
+	 background: rgba(0, 0, 0, 0.216); 
+} */
+.redes{
+	display: flex;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.216);
+	margin-top: 50px;
+	margin-bottom: 25px;
+	width: 100px;
+	transition: .5s ease all;
+}
+.redes:hover{
+	border-radius:50%;
+	background: #000;
+	width: 120px;
 }

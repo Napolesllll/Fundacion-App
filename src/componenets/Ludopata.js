@@ -4,7 +4,7 @@ export default function Ludopata(){
 
     return(
         <div className='container'>
-            <h1>Holii ludopta </h1>
+            <h1>Holii ludopta  </h1>
         </div>
     )
 }

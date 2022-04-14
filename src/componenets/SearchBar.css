@@ -1,4 +1,11 @@
-.inp {
+.bMaSoE{
+  border-radius: 5px;
+}
+img{
+  box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
+  border-radius: 5px;
+}
+/* .inp {
     margin: 5px;
     border-radius: 3px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.693);
@@ -30,3 +37,4 @@
   .navbar-brand > img {
     width: 55px;
   }
+   */

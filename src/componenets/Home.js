@@ -62,10 +62,10 @@ export default function Home(){
     </figure>
     
       
-        <br />
-        <br />
-        <hr />
         <main>
+        <hr />
+        
+
         <div class="container bg-light ">
             <div class="row align-items-center header-main">
                 <div class="col-md-7">
@@ -75,37 +75,45 @@ export default function Home(){
 
                     <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci beatae impedit quia, deleniti quasi sequi iusto exercitationem nihil nulla, laboriosam dolore c</p>
                 </div>
-                <br/>
+
+         
                 <div class="col-12 col-md-5">
-                    <div class="photo-frame position-relative shadow">
+                  <div class="photo-frame position-relative shadow">
                     <img src={camp} alt="" class="w-100 h-100"/>
+                  </div>
                 </div>
+        
+
             </div>
-            </div>
-            <hr/>
         </div>
     </main>
+            <hr/>
     <br />
     <br />
         {
           
           <div className='divCarrusel' style={!BurguerButton.clicked ? {display:'block'}:{display:'block'} } >
             
-        <div  id="carouselExampleInterval" class="col-md-10  carousel slide container-sm " data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-            <img src={img3} class="d-iline w-50" alt="img"/>
-            </div>
-            <div class="carousel-item" data-bs-interval="1000">
-            <img src={img2} class="d-iline w-50" alt="img"/>
-            </div>
-            <div class="carousel-item">
-            <img src={img} class="d-iline w-50" alt="img"/>
-            </div>
-            <div class="carousel-item">
-            <img src={img4} class="d-iline w-50" alt="img"/>
-            </div>
-        </div>
+    <div  id="carouselExampleInterval" class="col-md-10  carousel slide container-sm " data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="3000">
+              <img src={img3} class="d-iline w-50" alt="img"/>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="1000">
+              <img src={img2} class="d-iline w-50" alt="img"/>
+          </div>
+
+          <div class="carousel-item">
+              <img src={img} class="d-iline w-50" alt="img"/>
+          </div>
+
+          <div class="carousel-item">
+              <img src={img4} class="d-iline w-50" alt="img"/>
+          </div>
+      </div>
+      
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -134,7 +142,7 @@ export default function Home(){
           <div class="row">
             {/* <!--  Imagen 1 --> */}
             <Link to ='/contact'>
-            <a href=""
+            <a href="/contact"
                class="col-12 mb-3 portfolio-item" >
               <img src={port6}
                    alt="Moderado 3D" 
@@ -167,21 +175,21 @@ export default function Home(){
           <div class="row">
             <h1 class="col-12 py3 text-end display-4 ">Portfolio</h1>
             {/* <!--  Imagen 1 --> */}
-            <a href="" 
+            <a href="/home" 
                class="col-12 mb-3 portfolio-item">
               <img src={port3} 
                    alt="Web desing" 
                    class="w-100 img-btn-modal-js"/>
             </a>
             {/* <!--  Imagen 2 --> */}
-            <a href="" 
+            <a href="/home" 
                class="col-12 col-md-6 mb-3 portfolio-item">
               <img src={port4} 
                    alt="illustration" 
                    class="w-100 img-btn-modal-js"/>
             </a>
             {/* <!--  Imagen 3 --> */}
-            <a href="" 
+            <a href="/home" 
                class="col-12 col-md-6 mb-3 portfolio-item" >
               <img src={port5} 
                    alt="Branding" 
@@ -201,36 +209,38 @@ export default function Home(){
     
       <hr />
       <div class="row justify-content-center text-center">
-        {/* <!-- logo --> */}
-      <a href="/home" class="navbar-brand">
-        <img src={Logo} alt=""/>
-      </a>
+        
       {/* <!-- Items --> */}
-         <nav class="nav col-11 justify-content-center mb-4">
-          <a href="/home" class="nav-link active text-dark">Home</a>
-          <a href="/service" class="nav-link text-dark">Services</a>
-          <a href="/contact" class="nav-link text-dark">Contact</a>
-          <a href="/blog" class="nav-link text-dark">Blog</a>
+         <nav  class="nav col-11 justify-content-center mb-4">
+          <a className='navcito' href="/home" >Home</a>
+          <a className='navcito' href="/service" >Services</a>
+          <a className='navcito' href="/contact" >Contact</a>
+          <a className='navcito' href="/blog">Blog</a>
          </nav>
+         {/* <!-- logo --> */}
+      <div>
+        <h4>Llego el momento</h4>
+        <p> Bienvenido...</p>
+      </div>
          {/* <!-- redes sociales (Social networks) --> */}
          <div class=" icons-social-networks">
           {/* <!-- Facebook --> */}
-          <a href="https://www.facebook.com/rehabilitandocorazonesfundacion" target="_blank" class="bg-facebook">
-            <img src={icon} alt="facebook"/>
+          <a href="https://www.facebook.com/rehabilitandocorazonesfundacion"  class="bg-facebook">
+            <img className='redesHome' src={icon} alt="facebook"/>
           </a>
           {/* <!-- Instagram --> */}
-          <a href="https://www.instagram.com/fundrehabilitandocorazones/" target="_blank" class="bg-Instagram mx-3">
-            <img src={icon2} alt="Instagram"/>
+          <a href="https://www.instagram.com/fundrehabilitandocorazones/"  class="bg-Instagram mx-3">
+            <img className='redesHome' src={icon2} alt="Instagram"/>
           </a>
           {/* <!-- WhatsApp --> */}
-          <a href="https://api.whatsapp.com/send?phone=573243416005&app=facebook&entry_point=page_cta&fbclid=IwAR0FiOjcbfQfWuseaohCgL5yxWnNh4-DsGr5HLfBDTCIv_4oA9RIXp7QBY8" target="_blank" class="bg-whatsApp">
-            <img src={icon3} alt="whatsApp"/>
+          <a href="https://api.whatsapp.com/send?phone=573243416005&app=facebook&entry_point=page_cta&fbclid=IwAR0FiOjcbfQfWuseaohCgL5yxWnNh4-DsGr5HLfBDTCIv_4oA9RIXp7QBY8"  class="bg-whatsApp">
+            <img className='redesHome' src={icon3} alt="whatsApp"/>
           </a>
         </div>
 
       </div>
 
-      <footer > Copyright2022 © Rehabilitan docorazones fundacion </footer>
+      <footer > Copyright2022 © Rehabilitando corazones fundacion </footer>
   </div>
     )
 }

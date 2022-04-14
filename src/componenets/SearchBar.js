@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import BurguerButton from './BurgerButton'
 
-import log from '../img/log1.png'
+import log from '../img/log1.png';
+import './SearchBar.css'
 
 function Navbar() {
 
@@ -17,8 +18,8 @@ function Navbar() {
     <>
       <NavContainer>
          {/* <!-- logo --> */}
-      <a href="/home" class="navbar-brand">
-        <img className='log' src={log} alt=""/>
+      <a  href="/home" class="navbar-brand" >
+        <img  src={log} alt=""/>
       </a>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <a onClick={handleClick} href="/home">Home</a>
@@ -37,7 +38,8 @@ function Navbar() {
 
 export default Navbar
 
-export const NavContainer = styled.nav` 
+export const NavContainer = styled.nav`
+
   h2 {
     color: white;
     font-weight: 400;
@@ -54,7 +56,7 @@ export const NavContainer = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 4rem;
   }
   .links {
     position: absolute;
@@ -67,8 +69,15 @@ export const NavContainer = styled.nav`
     transition: all 0.5s ease;
     a {
       color: white;
-      font-size: 2rem;
+      font-size: 4rem;
       display: block;
+      transition: 0.4s transform ;
+      transform: scale(0.96);
+    }
+    a:hover {
+      color: black;
+      font-size: 2rem;
+      
     }
     @media (min-width: 768px) {
       position: initial;
@@ -92,10 +101,15 @@ export const NavContainer = styled.nav`
     right: 0;
     text-align: center;
     z-index: 301;
+    transition: .5s ease all;
     a {
       font-size: 2rem;
       margin-top: 1rem;
       color: white;
+    }
+    a:hover {
+      width: 1px;
+      color: black;
     }
   }
   .burguer {
@@ -117,10 +131,12 @@ export const BgDiv = styled.div`
   transition: all 0.6s ease;
 
   &.active {
+    box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
     border-radius: 0 0 80% 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
+  
 `
