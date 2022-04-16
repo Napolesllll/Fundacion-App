@@ -115,7 +115,7 @@ const Formulario = () => {
 			)}
 		</Formik>
 		{/* <!-- redes sociales (Social networks) --> */}
-		<div class=" icons-social-networks">
+		<div class=" icons-social-networks ">
           {/* <!-- Facebook --> */}
           <a href="https://www.facebook.com/rehabilitandocorazonesfundacion"  class="bg-facebook">
             <img className='redes' src={icon} alt="facebook"/>

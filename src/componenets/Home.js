@@ -92,7 +92,7 @@ export default function Home(){
     <br />
         {
           
-          <div className='divCarrusel' style={!BurguerButton.clicked ? {display:'block'}:{display:'block'} } >
+   <div className='divCarrusel' style={!BurguerButton.clicked ? {display:'block'}:{display:'block'} } >
             
     <div  id="carouselExampleInterval" class="col-md-10  carousel slide container-sm " data-bs-ride="carousel">
       <div class="carousel-inner">

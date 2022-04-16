@@ -5,6 +5,9 @@ img{
   box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
   border-radius: 5px;
 }
+.QmIVq .links.active a{
+  width: 200px;
+}
 /* .inp {
     margin: 5px;
     border-radius: 3px;

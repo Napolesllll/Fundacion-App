@@ -56,7 +56,7 @@ export const NavContainer = styled.nav`
   a {
     color: white;
     text-decoration: none;
-    margin-right: 4rem;
+    margin-right: 2rem;
   }
   .links {
     position: absolute;
@@ -68,6 +68,9 @@ export const NavContainer = styled.nav`
     text-align: center;
     transition: all 0.5s ease;
     a {
+      padding: 10px;
+      border-radius: 30%;
+      box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
       color: white;
       font-size: 4rem;
       display: block;
@@ -86,23 +89,25 @@ export const NavContainer = styled.nav`
         font-size: 1rem;
         color: white;
         display: inline;
+        transition: .5s ease all
       }
       display: block;
     }
   }
   .links.active {
-    width: 100%;
+    width: 200px;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 30%;
+    top: 20%;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 301;
     transition: .5s ease all;
     a {
+      margin-bottom: 40px;
       font-size: 2rem;
       margin-top: 1rem;
       color: white;

@@ -12,7 +12,7 @@
     box-shadow: 0 0 20px rgba(14, 14, 19, 0.618);
     padding-bottom: 55px; 
      padding-top: 55px; 
-    margin: 30px 150px 30px 150px;
+    margin: 20px 20px 20px 20px;
     
  }
  .d-iline{
@@ -63,6 +63,7 @@
 	width: 80px;
 }
 .navcito:hover{
+  transition: .5s ease all;
   width: 100px;
   color: green;
 }
@@ -70,11 +71,10 @@
   border-radius: 50%;
   text-decoration: none;
   color: gray;
-   transition: .5s ease all;
-   display: inline-block;
-   padding: 10px;
-   margin: 10px;
-   font-size: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  font-size: 10px;
   background: rgba(14, 12, 12, 0.118);
  }
  footer {
