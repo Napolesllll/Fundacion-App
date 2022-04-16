@@ -110,8 +110,7 @@ dist
 # package-lock.json
 package-lock.json
 
-.env
-.env.test
+
 
 # dependencies
 /node_modules
